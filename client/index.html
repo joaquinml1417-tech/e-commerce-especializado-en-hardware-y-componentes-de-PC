@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Store - Realicó</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="nav-left">
+                <a href="/" class="home-icon">🏠 Home</a>
+            </div>
+            
+            <div class="logo-central">
+                <h1>HARDWARE <span>STORE</span></h1>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" id="link-login" onclick="abrirModal('modal-login')">👤 Iniciar Sesión</a>
+                <div class="carrito-wrapper">
+                    <button id="btn-carrito-header" onclick="mostrarCarrito()">🛒 <span id="contador-carrito">0</span></button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="categorias-bar">
+            <button class="cat-btn" onclick="filtrar('Placa')">Placas de Video</button>
+            <button class="cat-btn" onclick="filtrar('Monitor')">Monitores</button>
+            <button class="cat-btn" onclick="filtrar('Teclado')">Teclados</button>
+            <button class="cat-btn" onclick="filtrar('Mouse')">Mouses</button>
+            <button class="cat-btn" onclick="filtrar('todos')">Ver Todo</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="input-search" placeholder="¿Qué estás buscando hoy?">
+        </div>
+
+        <section id="contenedor-productos" class="productos-grid">
+            <p>Cargando tecnología...</p>
+        </section>
+    </main>
+
+    <div id="modal-login" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-btn" onclick="cerrarModal('modal-login')">×</button>
+            <h2>Iniciar Sesión</h2>
+            <form id="form-login">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+            <p style="margin-top: 15px; text-align: center; font-size: 0.9rem;">
+                ¿No tienes cuenta? <span onclick="cerrarModal('modal-login'); abrirModal('modal-registro')" style="color: var(--primary); cursor: pointer; text-decoration: underline;">Regístrate aquí</span>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-registro" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-btn" onclick="cerrarModal('modal-registro')">×</button>
+            <h2>Crear Cuenta Nueva</h2>
+            <form id="form-registro">
+                <input type="text" id="reg-nombre" placeholder="Nombre" required>
+                <input type="text" id="reg-apellido" placeholder="Apellido" required>
+                <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                <input type="password" id="reg-password" placeholder="Contraseña de acceso" required>
+                <button type="submit" class="btn-primary">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-carrito" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-btn" onclick="cerrarModal('modal-carrito')">×</button>
+            <h2>Tu Carrito</h2>
+            <div id="lista-carrito"></div>
+            <div class="carrito-footer">
+                <p>Total: <span id="total-carrito">$ 0</span></p>
+                <button id="btn-comprar" class="btn-primary">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Hardware Store S.R.L. - Componentes de Alta Gama</p>
+            <p>Desarrollado por: <strong>Joaquín Muñoz Lopez</strong> - Tecnicatura Superior en Análisis de Sistemas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

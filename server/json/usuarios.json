@@ -1,0 +1,26 @@
+[
+  {
+    "id": 101,
+    "nombre": "Joaquín",
+    "apellido": "Muñoz",
+    "email": "joaquin.m@gmail.com",
+    "contrasena": "password_2025",
+    "es_premium": true
+  },
+  {
+    "id": 102,
+    "nombre": "Laura",
+    "apellido": "Gómez",
+    "email": "laura.g@gmail.com",
+    "contrasena": "password_2026",
+    "es_premium": false
+  },
+  {
+    "id": 103,
+    "nombre": "Juan",
+    "apellido": "Gómez",
+    "email": "juan.g@gmail.com",
+    "contrasena": "password_2026",
+    "es_premium": false
+  }
+]

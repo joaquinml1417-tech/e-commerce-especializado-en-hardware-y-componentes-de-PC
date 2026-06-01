@@ -1,0 +1,36 @@
+use('hardwareStore');
+
+db.productos.insertMany([
+  {
+    "id": 501,
+    "nombre": "Monitor Gamer 27'",
+    "desc": "Resolución 1440p, 144Hz, Panel IPS",
+    "precio": 350.5,
+    "imagen": "img/monitor.jpg",
+    "stock_disponible": true
+  },
+  {
+    "id": 502,
+    "nombre": "Teclado Mecánico RGB",
+    "desc": "Switches Red, Layout Español",
+    "precio": 85,
+    "imagen": "img/teclado.jpg",
+    "stock_disponible": true
+  },
+  {
+    "id": 503,
+    "nombre": "Placa de Video RTX 4070",
+    "desc": "12GB GDDR6X, Ray Tracing",
+    "precio": 899.99,
+    "imagen": "img/rtx4070.jpg",
+    "stock_disponible": false
+  },
+  {
+    "id": 1777600061919,
+    "nombre": "Mouse Logitech G Pro",
+    "desc": "Sensor HERO 25K, Inalámbrico",
+    "precio": 120,
+    "imagen": "img/mouse.jpg",
+    "stock_disponible": true
+  }
+]);

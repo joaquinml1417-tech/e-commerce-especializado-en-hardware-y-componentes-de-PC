@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1001,
+    "id_usuario": 101,
+    "fecha": "2026-04-05",
+    "total": 435.5,
+    "direccion": "Calle Belgrano 123, Realicó, La Pampa",
+    "envio_finalizado": true,
+    "productos": [
+      {
+        "id_producto": 501,
+        "cantidad": 1
+      },
+      {
+        "id_producto": 502,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "id_usuario": 102,
+    "fecha": "2026-04-06",
+    "total": 701,
+    "direccion": "Av. Libertador 456, CABA",
+    "envio_finalizado": false,
+    "productos": [
+      {
+        "id_producto": 501,
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 1778511495843,
+    "id_usuario": 101,
+    "fecha": "2026-05-11",
+    "productos": [
+      {
+        "id_producto": 503,
+        "cantidad": 1
+      }
+    ],
+    "total": 899.99
+  },
+  {
+    "id": 1778512686341,
+    "id_usuario": 101,
+    "fecha": "2026-05-11",
+    "productos": [
+      {
+        "id_producto": 503,
+        "cantidad": 1
+      }
+    ],
+    "total": 899.99
+  },
+  {
+    "id": 1778513263923,
+    "id_usuario": 101,
+    "fecha": "2026-05-11",
+    "productos": [
+      {
+        "id_producto": 503,
+        "cantidad": 1
+      },
+      {
+        "id_producto": 1777600061919,
+        "cantidad": 1
+      }
+    ],
+    "total": 1019.99
+  },
+  {
+    "id": 1778513819476,
+    "id_usuario": 101,
+    "nombre_usuario": "Joaquín Muñoz",
+    "fecha": "2026-05-11",
+    "productos": [
+      {
+        "id_producto": 503,
+        "cantidad": 1
+      },
+      {
+        "id_producto": 1777600061919,
+        "cantidad": 1
+      }
+    ],
+    "total": 1019.99
+  }
+]
